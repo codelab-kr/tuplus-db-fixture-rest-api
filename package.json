@@ -1,0 +1,37 @@
+{
+  "name": "db-fixture-rest-api",
+  "version": "1.0.0",
+  "description": "A REST API for loading and unloading MongoDB database fixtures.",
+  "scripts": {
+    "start": "nodemon --legacy-watch --watch \"fixtures/**/*\" ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleydavis/db-fixture-rest-api.git"
+  },
+  "keywords": [
+    "test",
+    "database",
+    "MongoDB",
+    "fixture"
+  ],
+  "author": "ashley@codecapers.com.au",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashleydavis/db-fixture-rest-api/issues"
+  },
+  "homepage": "https://github.com/ashleydavis/db-fixture-rest-api#readme",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.1",
+    "@types/node-mongodb-fixtures": "^3.2.3",
+    "express": "^5.0.0-beta.1",
+    "globby": "^9.2.0",
+    "mongodb": "^5.7.0",
+    "node-mongodb-fixtures": "^3.2.9",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "private": true
+}
