@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import Fixtures from 'node-mongodb-fixtures';
 import { join, basename, dirname } from 'path';
-import { MongoClient, MongoClientOptions } from 'mongodb';
+import { MongoClient } from 'mongodb';
 import globby from 'globby';
 
 const inProduction = process.env.NODE_ENV === 'production';
