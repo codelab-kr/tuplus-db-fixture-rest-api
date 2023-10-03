@@ -4,7 +4,7 @@ import { join, basename, dirname } from 'path';
 import { MongoClient } from 'mongodb';
 import globby from 'globby';
 
-const inProduction = process.env.NODE_ENV === 'production';
+const inProduction = process.env.NODE_ENV !== 'development';
 if (inProduction) {
   throw new Error("Don't run DB FIXTURE API in production!!");
 }
